@@ -1,0 +1,6 @@
+org/example/progettospringaop/aop/Mercato.class
+org/example/progettospringaop/test/Test.class
+org/example/progettospringaop/config/Config.class
+org/example/progettospringaop/aop/MercatoImpl.class
+org/example/progettospringaop/aop/Logger.class
+org/example/progettospringaop/aop/MercatoProxy.class
