@@ -13,12 +13,15 @@ public class Logger {
     //value= viene indicato il pointcut
     @Before(value = "execution(* org.example.progettospringaop.bean.ProdottoService.datiProdotto())")
     public void logBefore(JoinPoint joinPoint){
+
         System.out.println("Sono nel metodo logBefore");
+        //System.out.println("-------"+joinPoint.getSignature().getName()+"--------");
     }
 
     @Before(value = "args(java.lang.Long)")
     public void otherLogBefore(JoinPoint joinPoint){
         System.out.println("Heyyyyy, sono nel metodo logBefore");
+        System.out.println("-------"+joinPoint.getSignature().getName()+"--------");
     }
 
     @After(value = "within(org.example.progettospringaop.bean..*)")
@@ -48,4 +51,6 @@ public class Logger {
 
     //Advice(vengono eseguiti in un determinato momento considerando i pointcut):
     //before,after,afterReturning,afterThrowing,around
+
+    //TODO capire i jointpoint
 }

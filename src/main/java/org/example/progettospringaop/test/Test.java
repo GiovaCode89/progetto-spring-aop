@@ -38,12 +38,14 @@ public class Test {
 
 //        prodottoService.getStringa();
 
+//
+//        try {
+//            prodottoService.metodoProva();
+//        }catch (IllegalArgumentException i)
+//        {}
+//        System.out.println("programma terminato!");
+//        prodottoService.datiProdotto();
 
-        try {
-            prodottoService.metodoProva();
-        }catch (IllegalArgumentException i)
-        {}
-        System.out.println("programma terminato!");
-
+            aziendaService.provaArgs(new Long(2));
     }
 }
